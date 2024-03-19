@@ -57,3 +57,39 @@ aside > :last-child {
 	- 640px
 	- 1000px
 */
+
+@media (min-width: 640px) {
+  .hlavicka,
+  .reklama,
+  .paticka {
+    width: 100%;
+  }
+  .kontejner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu {
+    max-width: 30%;
+  }
+  .obsah {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hlavicka,
+  .paticka {
+    width: 100%;
+  }
+  .kontejner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu,
+  .reklama {
+    max-width: 20%;
+  }
+  .obsah {
+    max-width: 60%;
+  }
+}
